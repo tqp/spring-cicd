@@ -14,17 +14,17 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class MyAwsCdPlanetApplicationTests {
+public class DiagnosticsController {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     public void verifyHelloMessage() throws Exception {
-        String patternString = "(Hello AWS Continuous Delivery!! From host: ).*\\/\\d+.\\d+.\\d+.\\d+";
+        String patternString = "(Success! Response from host: ).*\\/\\d+.\\d+.\\d+.\\d+";
         Matcher<String> regexMatcher = Matchers.matchesRegex(patternString);
 
-        this.mockMvc.perform(get("/hello")).andExpect(status().isOk())
+        this.mockMvc.perform(get("/api/v1/diagnostics/")).andExpect(status().isOk())
                 .andExpect(content().string(regexMatcher));
     }
 
