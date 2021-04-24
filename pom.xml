@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.timsanalytics</groupId>
-	<artifactId>cicd</artifactId>
+	<artifactId>spring-cicd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cicd</name>
+	<name>spring-cicd</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>

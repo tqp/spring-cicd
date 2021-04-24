@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        String message = "Hello AWS Continuous Delivery!";
+        String message = "Hello AWS Continuous Delivery!!";
         try {
             InetAddress ip = InetAddress.getLocalHost();
             message += " From host: " + ip;
