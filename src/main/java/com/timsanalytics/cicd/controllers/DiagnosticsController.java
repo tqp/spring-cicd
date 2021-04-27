@@ -28,7 +28,7 @@ public class DiagnosticsController {
     @ResponseBody
     @RequestMapping(value = "/name", method = RequestMethod.GET)
     public String getName() {
-        return "This is the 'cicd' app. (1)";
+        return "This is the 'cicd' app. (2)";
     }
 
 }
