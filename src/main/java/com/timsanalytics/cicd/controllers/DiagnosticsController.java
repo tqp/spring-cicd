@@ -25,5 +25,11 @@ public class DiagnosticsController {
         return message;
     }
 
+    @ResponseBody
+    @RequestMapping(value = "/name", method = RequestMethod.GET)
+    public String getName() {
+        return "This is the 'cicd' app.";
+    }
+
 }
 
